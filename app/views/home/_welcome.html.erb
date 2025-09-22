@@ -1,8 +1,8 @@
 <div id="welcome" class="container w-75 mt-5 mb-4 pt-5">
-
+  <h1 class="text-danger"><%= t('welcome.instructions.title', username: current_user.username).html_safe %></h1>
   <br/>
   <br/>
-  < class="lead"><%= t('welcome.instructions.subtitle') %></>
+  <class="lead"><%= t('welcome.instructions.subtitle') %></>
 
   <br/>
 
@@ -16,8 +16,5 @@
     <a class="mb-2"><%= t('welcome.instructions.list.submit_answers') %></a>
     <span class="mb-2"><%= t('welcome.instructions.list.start_quiz') %></span>
   </ul>
-
-    <p class="text-danger"><%= t('welcome.instructions.title', username: 'current_user.username').html_safe %>
-  </p>
 </div>
 
