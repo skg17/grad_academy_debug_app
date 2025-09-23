@@ -10,7 +10,7 @@
         <p><%= t('check_answers.submit_modal_confirmation') %></p>
       </div>
       <div class="modal-footer justify-content-between border-0">
-        <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal"><%= t('check_answers.submit_modal_cancel') %></button>
+        <%= link_to t('check_answers.submit_modal_cancel'), check_your_answers_steps_path, class: "btn btn-outline-danger" %>
         <%= link_to t('forms.submit'), results_steps_path, class: "btn btn-danger" %>
       </div>
     </div>
